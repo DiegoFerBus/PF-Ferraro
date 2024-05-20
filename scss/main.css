@@ -85,6 +85,7 @@ h1 {
   background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
   font-size: 30px;
   width: 100%;
+  margin: 23px;
 }
 
 .texto-inicio {
@@ -93,8 +94,8 @@ h1 {
 }
 
 .series-padre {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .texto-series {
@@ -123,6 +124,21 @@ h1 {
 }
 .poster-avatar:hover, .content:hover {
   transform: scale(1.1);
+}
+
+.poster-peli {
+  width: 90vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.avatar {
+  background-image: url("../resources/peliculas/avatar-2.jpeg");
+}
+
+.avengers {
+  background-image: url("https://img.ecartelera.com/noticias/fotos/10300/10304/1.jpg");
 }
 
 .bordes-redondeados {
@@ -319,6 +335,7 @@ body {
   min-height: 690px;
   padding: 30px 0px;
   transition: transform 0.3s ease;
+  justify-content: space-between;
 }
 .content:hover {
   transform: scale(1.1);
@@ -333,6 +350,11 @@ body {
   .dune {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   }
+  .series-padre {
+    display: grid;
+    grid-template-rows: 0.3fr 0.7fr;
+    grid-template-columns: 1fr;
+  }
   .portada-peli {
     width: 200px;
     height: 300px;
@@ -342,6 +364,9 @@ body {
 @media screen and (max-width: 375px) {
   nav ul {
     flex-direction: column;
+  }
+  .desc-poster {
+    font-size: medium;
   }
 }
 .content {
@@ -367,7 +392,7 @@ body {
 .desc-poster {
   justify-content: space-evenly;
   display: flex;
-  font-size: 30px;
+  font-size: 22px;
   padding: 30px;
   font-weight: bold;
   color: rgb(224, 88, 10);
