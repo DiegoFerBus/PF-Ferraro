@@ -1,0 +1,58 @@
+
+.logo img {
+    width: 200px;
+    /* Ancho de la imagen del logo */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Quitamos los estilos de lista */
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        display: inline-block;
+        padding: 10px;
+
+        a {
+            color: $menunav;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/*---- Navegacion ----*/
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+
+    a {
+        color: $menunav;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.titulo-pagina {
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: bold;
+    text-shadow: 10px 10px 2px rgb(200, 195, 195);
+}
